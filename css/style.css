@@ -1,0 +1,42 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+section {
+  background-image: linear-gradient(
+    45deg,
+    rgba(34, 164, 116, 1) 0%,
+    rgba(41, 47, 143, 1) 100%
+  );
+}
+
+#appContainer {
+  max-width: 800px;
+  background: white;
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  width: calc(50% - 22px);
+}
+
+td {
+  cursor: pointer;
+}

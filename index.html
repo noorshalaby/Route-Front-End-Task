@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A website to display customer " />
+    <title>Customer Transaction App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="min-vh-100">
+        <div id="appContainer" class="bg-white mx-auto shadow-lg">
+          <h1 class="text-center">Customer Transactions</h1>
+          <input
+            type="text"
+            class="form-control my-5"
+            id="filterName"
+            placeholder="Filter by customer name"
+          />
+          <input
+            type="number"
+            class="form-control my-5"
+            id="filterAmount"
+            placeholder="Filter by transaction amount"
+          />
+          <table id="customerTable">
+            <thead>
+              <tr class="text-danger">
+                <th>Customer Name</th>
+                <th>Transaction Date</th>
+                <th>Transaction Amount</th>
+              </tr>
+            </thead>
+            <tbody id="displayData"></tbody>
+          </table>
+          <canvas id="transactionChart" width="400" height="200"></canvas>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
